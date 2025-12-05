@@ -31,45 +31,45 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Move image folders
-        run: |
-          # mv ./doctruyen14.net ./doctruyen14.vip/
-          # mv ./meitu.jrants.com ./doctruyen14.vip/
-          # mv ./i.imgur.com ./doctruyen14.vip/
-          # mv ./gcs.tripi.vn ./doctruyen14.vip/
-          # mv ./watermark.lovepik.com ./doctruyen14.vip/
-          # mv ./st.quantrimang.com ./doctruyen14.vip/
-          # mv ./64.media.tumblr.com ./doctruyen14.vip/
-          # mv ./*.media.tumblr.com ./doctruyen14.vip/
-          # mv ./blogger.googleusercontent.com ./doctruyen14.vip/
-          # mv ./lh*.googleusercontent.com ./doctruyen14.vip/
-          # mv ./i5.walmartimages.com ./doctruyen14.vip/
-          # mv ./i*.walmartimages.com ./doctruyen14.vip/
-          # mv ./pbs.twimg.com ./doctruyen14.vip/
-          # mv ./pics.dmm.co.jp ./doctruyen14.vip/
-          # mv ./encrypted-tbn0.gstatic.com ./doctruyen14.vip/
-          # mv ./i.ytimg.com ./doctruyen14.vip/
-          # mv ./down-vn.img.susercontent.com ./doctruyen14.vip/
-          # mv ./www.babepedia.com ./doctruyen14.vip/
-          # mv ./www.themoviedb.org ./doctruyen14.vip/
-          # mv ./nimg.ws.126.net ./doctruyen14.vip/
-          # mv ./tinhayvip.com ./doctruyen14.vip/
-          # mv ./images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com ./doctruyen14.vip/
-          # mv ./iv1.lisimg.com ./doctruyen14.vip/
-          # mv ./eroticmv.com ./doctruyen14.vip/
-          # mv ./i.pinimg.com ./doctruyen14.vip/
-          # mv ./static-cache.k2s.cc ./doctruyen14.vip/
-          # mv ./tn.vjav.com ./doctruyen14.vip/
-          # mv ./*.bp.blogspot.com ./doctruyen14.vip/
-          # mv ./shopchich.vn ./doctruyen14.vip/
-          # mv ./cdn.jsdelivr.net ./doctruyen14.vip/
-          # mv ./vn-test-11.slatic.net ./doctruyen14.vip/
-          # mv ./sun9-61.userapi.com ./doctruyen14.vip/
-          # mv ./cf.shopee.vn ./doctruyen14.vip/
-          # mv ./cdn.24h.com.vn ./doctruyen14.vip/
-          # mv ./ae01.alicdn.com ./doctruyen14.vip/
-          mv *.(net|com|vn|jp|org|cc) ./doctruyen14.vip/
-          echo "Folders moved"
+      # - name: Move image folders
+      #   run: |
+      #     # mv ./doctruyen14.net ./doctruyen14.vip/
+      #     # mv ./meitu.jrants.com ./doctruyen14.vip/
+      #     # mv ./i.imgur.com ./doctruyen14.vip/
+      #     # mv ./gcs.tripi.vn ./doctruyen14.vip/
+      #     # mv ./watermark.lovepik.com ./doctruyen14.vip/
+      #     # mv ./st.quantrimang.com ./doctruyen14.vip/
+      #     # mv ./64.media.tumblr.com ./doctruyen14.vip/
+      #     # mv ./*.media.tumblr.com ./doctruyen14.vip/
+      #     # mv ./blogger.googleusercontent.com ./doctruyen14.vip/
+      #     # mv ./lh*.googleusercontent.com ./doctruyen14.vip/
+      #     # mv ./i5.walmartimages.com ./doctruyen14.vip/
+      #     # mv ./i*.walmartimages.com ./doctruyen14.vip/
+      #     # mv ./pbs.twimg.com ./doctruyen14.vip/
+      #     # mv ./pics.dmm.co.jp ./doctruyen14.vip/
+      #     # mv ./encrypted-tbn0.gstatic.com ./doctruyen14.vip/
+      #     # mv ./i.ytimg.com ./doctruyen14.vip/
+      #     # mv ./down-vn.img.susercontent.com ./doctruyen14.vip/
+      #     # mv ./www.babepedia.com ./doctruyen14.vip/
+      #     # mv ./www.themoviedb.org ./doctruyen14.vip/
+      #     # mv ./nimg.ws.126.net ./doctruyen14.vip/
+      #     # mv ./tinhayvip.com ./doctruyen14.vip/
+      #     # mv ./images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com ./doctruyen14.vip/
+      #     # mv ./iv1.lisimg.com ./doctruyen14.vip/
+      #     # mv ./eroticmv.com ./doctruyen14.vip/
+      #     # mv ./i.pinimg.com ./doctruyen14.vip/
+      #     # mv ./static-cache.k2s.cc ./doctruyen14.vip/
+      #     # mv ./tn.vjav.com ./doctruyen14.vip/
+      #     # mv ./*.bp.blogspot.com ./doctruyen14.vip/
+      #     # mv ./shopchich.vn ./doctruyen14.vip/
+      #     # mv ./cdn.jsdelivr.net ./doctruyen14.vip/
+      #     # mv ./vn-test-11.slatic.net ./doctruyen14.vip/
+      #     # mv ./sun9-61.userapi.com ./doctruyen14.vip/
+      #     # mv ./cf.shopee.vn ./doctruyen14.vip/
+      #     # mv ./cdn.24h.com.vn ./doctruyen14.vip/
+      #     # mv ./ae01.alicdn.com ./doctruyen14.vip/
+      #     mv *.(net|com|vn|jp|org|cc) ./doctruyen14.vip/
+      #     echo "Folders moved"
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
