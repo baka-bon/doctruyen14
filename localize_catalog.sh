@@ -1,4 +1,4 @@
-find . -type f -name "*.html" -exec dos2unix {} \;
+#find . -type f -name "*.html" -exec dos2unix {} \;
 
 find . -type f -name "*.html" -mindepth 2 -maxdepth 2 -exec perl -0777 -i -pe 's/(href|src)="https:\/\/doctruyen14\.vip\/((?!feed\/|comments\/|wp-json\/|truyen-ma\/|truyen-cuoi\/|dang-truyen\/|nghe-audio-truyen-sex-mp3\/|truyen-gay\/|truyen-teen\/|truyen-tinh-cam\/|truyen-tranh\/|(?:tag\/)?(?:audio-truyen|truyen-audio))[^"]+\/(?<!feed\/))?"/$1="$2index.html"/mg' {} \;
 find . -type f -name "*.html" -mindepth 3 -maxdepth 3 -exec perl -0777 -i -pe 's/(href|src)="https:\/\/doctruyen14\.vip\/((?!feed\/|comments\/|wp-json\/|truyen-ma\/|truyen-cuoi\/|dang-truyen\/|nghe-audio-truyen-sex-mp3\/|truyen-gay\/|truyen-teen\/|truyen-tinh-cam\/|truyen-tranh\/|(?:tag\/)?(?:audio-truyen|truyen-audio))[^"]+\/(?<!feed\/))?"/$1="..\/$2index.html"/mg' {} \;
