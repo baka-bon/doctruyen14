@@ -1,2 +1,0 @@
-find tag -name "*.html" -mindepth 2 -maxdepth 2 -print0 | sort -z | xargs -r0 grep '<h1 class="archive-title">' | sed -E 's/([^:]+):.*>([^<]+)<\/h1>.*/\t<li><h2><a class="entry-title" href="\1" rel="bookmark">\2<\/a><\/h2><\/li>/' >> tags.html
-# find truyen-sex-nguoi-lon -name "*.html" -mindepth 2 -maxdepth 2 -print0 | sort -z | xargs -r0 grep '<h1 class="archive-title">' | sed -E 's/([^:]+):.*>([^<]+)<\/h1>.*/\t<li><h2><a class="entry-title" href="\1" rel="bookmark">\2<\/a><\/h2><\/li>/' >> categories.html
