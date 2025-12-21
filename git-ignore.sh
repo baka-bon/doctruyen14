@@ -17,3 +17,4 @@ git update-index --assume-unchanged doctruyen14.cc/nhung-mau-chuyen-ngan-ve-cuck
 git update-index --assume-unchanged doctruyen14.cc/phuot-cung-em-gai-loli-truyen-hay/49/index.html
 git update-index --assume-unchanged doctruyen14.cc/tai-sao-chung-ta-lai-ra-nong-noi-nay/2/index.html
 git update-index --assume-unchanged doctruyen14.cc/tu-truyẹn-toi-da-biet-den-sex-nhu-the-day-truyen-moi-2022/6/index.html
+git update-index --assume-unchanged doctruyen14.cc/truyen-dem-khuya-20-ga-ban-trai-hao-sac/index.html
