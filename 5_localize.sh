@@ -12,4 +12,4 @@ find . -type f -name "*.html" -mindepth 6 -maxdepth 6 -exec perl -0777 -i -pe 's
 
 #find . -type f -name "*.html" -exec perl -0777 -i -pe 's/mage" content="(?:\.\.\/)*((?!http)[^"]+)"/mage" content="https:\/\/baka-bon.github.io\/doctruyen14\/href"/mg' {} \;
 
-git add doctruyen14.cc
+git add -u doctruyen14.cc
