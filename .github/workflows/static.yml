@@ -33,42 +33,42 @@ jobs:
         uses: actions/checkout@v4
       # - name: Move image folders
       #   run: |
-      #     # mv ./doctruyen14.net ./doctruyen14.cc/
-      #     # mv ./meitu.jrants.com ./doctruyen14.cc/
-      #     # mv ./i.imgur.com ./doctruyen14.cc/
-      #     # mv ./gcs.tripi.vn ./doctruyen14.cc/
-      #     # mv ./watermark.lovepik.com ./doctruyen14.cc/
-      #     # mv ./st.quantrimang.com ./doctruyen14.cc/
-      #     # mv ./64.media.tumblr.com ./doctruyen14.cc/
-      #     # mv ./*.media.tumblr.com ./doctruyen14.cc/
-      #     # mv ./blogger.googleusercontent.com ./doctruyen14.cc/
-      #     # mv ./lh*.googleusercontent.com ./doctruyen14.cc/
-      #     # mv ./i5.walmartimages.com ./doctruyen14.cc/
-      #     # mv ./i*.walmartimages.com ./doctruyen14.cc/
-      #     # mv ./pbs.twimg.com ./doctruyen14.cc/
-      #     # mv ./pics.dmm.co.jp ./doctruyen14.cc/
-      #     # mv ./encrypted-tbn0.gstatic.com ./doctruyen14.cc/
-      #     # mv ./i.ytimg.com ./doctruyen14.cc/
-      #     # mv ./down-vn.img.susercontent.com ./doctruyen14.cc/
-      #     # mv ./www.babepedia.com ./doctruyen14.cc/
-      #     # mv ./www.themoviedb.org ./doctruyen14.cc/
-      #     # mv ./nimg.ws.126.net ./doctruyen14.cc/
-      #     # mv ./tinhaycc.com ./doctruyen14.cc/
-      #     # mv ./images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com ./doctruyen14.cc/
-      #     # mv ./iv1.lisimg.com ./doctruyen14.cc/
-      #     # mv ./eroticmv.com ./doctruyen14.cc/
-      #     # mv ./i.pinimg.com ./doctruyen14.cc/
-      #     # mv ./static-cache.k2s.cc ./doctruyen14.cc/
-      #     # mv ./tn.vjav.com ./doctruyen14.cc/
-      #     # mv ./*.bp.blogspot.com ./doctruyen14.cc/
-      #     # mv ./shopchich.vn ./doctruyen14.cc/
-      #     # mv ./cdn.jsdelivr.net ./doctruyen14.cc/
-      #     # mv ./vn-test-11.slatic.net ./doctruyen14.cc/
-      #     # mv ./sun9-61.userapi.com ./doctruyen14.cc/
-      #     # mv ./cf.shopee.vn ./doctruyen14.cc/
-      #     # mv ./cdn.24h.com.vn ./doctruyen14.cc/
-      #     # mv ./ae01.alicdn.com ./doctruyen14.cc/
-      #     mv *.(net|com|vn|jp|org|cc) ./doctruyen14.cc/
+      #     # mv ./doctruyen14.net ./doctruyen14.onl/
+      #     # mv ./meitu.jrants.com ./doctruyen14.onl/
+      #     # mv ./i.imgur.com ./doctruyen14.onl/
+      #     # mv ./gcs.tripi.vn ./doctruyen14.onl/
+      #     # mv ./watermark.lovepik.com ./doctruyen14.onl/
+      #     # mv ./st.quantrimang.com ./doctruyen14.onl/
+      #     # mv ./64.media.tumblr.com ./doctruyen14.onl/
+      #     # mv ./*.media.tumblr.com ./doctruyen14.onl/
+      #     # mv ./blogger.googleusercontent.com ./doctruyen14.onl/
+      #     # mv ./lh*.googleusercontent.com ./doctruyen14.onl/
+      #     # mv ./i5.walmartimages.com ./doctruyen14.onl/
+      #     # mv ./i*.walmartimages.com ./doctruyen14.onl/
+      #     # mv ./pbs.twimg.com ./doctruyen14.onl/
+      #     # mv ./pics.dmm.co.jp ./doctruyen14.onl/
+      #     # mv ./encrypted-tbn0.gstatic.com ./doctruyen14.onl/
+      #     # mv ./i.ytimg.com ./doctruyen14.onl/
+      #     # mv ./down-vn.img.susercontent.com ./doctruyen14.onl/
+      #     # mv ./www.babepedia.com ./doctruyen14.onl/
+      #     # mv ./www.themoviedb.org ./doctruyen14.onl/
+      #     # mv ./nimg.ws.126.net ./doctruyen14.onl/
+      #     # mv ./tinhaycc.com ./doctruyen14.onl/
+      #     # mv ./images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com ./doctruyen14.onl/
+      #     # mv ./iv1.lisimg.com ./doctruyen14.onl/
+      #     # mv ./eroticmv.com ./doctruyen14.onl/
+      #     # mv ./i.pinimg.com ./doctruyen14.onl/
+      #     # mv ./static-cache.k2s.cc ./doctruyen14.onl/
+      #     # mv ./tn.vjav.com ./doctruyen14.onl/
+      #     # mv ./*.bp.blogspot.com ./doctruyen14.onl/
+      #     # mv ./shopchich.vn ./doctruyen14.onl/
+      #     # mv ./cdn.jsdelivr.net ./doctruyen14.onl/
+      #     # mv ./vn-test-11.slatic.net ./doctruyen14.onl/
+      #     # mv ./sun9-61.userapi.com ./doctruyen14.onl/
+      #     # mv ./cf.shopee.vn ./doctruyen14.onl/
+      #     # mv ./cdn.24h.com.vn ./doctruyen14.onl/
+      #     # mv ./ae01.alicdn.com ./doctruyen14.onl/
+      #     mv *.(net|com|vn|jp|org|cc) ./doctruyen14.onl/
       #     echo "Folders moved"
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -76,7 +76,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload entire repository
-          path: './doctruyen14.cc/'
+          path: './doctruyen14.onl/'
           retention-days: 1
       - name: Deploy to GitHub Pages
         id: deployment
