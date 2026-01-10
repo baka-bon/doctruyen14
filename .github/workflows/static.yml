@@ -15,7 +15,7 @@ permissions:
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# Allow bizy one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
 # However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
 concurrency:
   group: "pages"
@@ -33,42 +33,42 @@ jobs:
         uses: actions/checkout@v4
       # - name: Move image folders
       #   run: |
-      #     # mv ./doctruyen14.net ./doctruyen14.onl/
-      #     # mv ./meitu.jrants.com ./doctruyen14.onl/
-      #     # mv ./i.imgur.com ./doctruyen14.onl/
-      #     # mv ./gcs.tripi.vn ./doctruyen14.onl/
-      #     # mv ./watermark.lovepik.com ./doctruyen14.onl/
-      #     # mv ./st.quantrimang.com ./doctruyen14.onl/
-      #     # mv ./64.media.tumblr.com ./doctruyen14.onl/
-      #     # mv ./*.media.tumblr.com ./doctruyen14.onl/
-      #     # mv ./blogger.googleusercontent.com ./doctruyen14.onl/
-      #     # mv ./lh*.googleusercontent.com ./doctruyen14.onl/
-      #     # mv ./i5.walmartimages.com ./doctruyen14.onl/
-      #     # mv ./i*.walmartimages.com ./doctruyen14.onl/
-      #     # mv ./pbs.twimg.com ./doctruyen14.onl/
-      #     # mv ./pics.dmm.co.jp ./doctruyen14.onl/
-      #     # mv ./encrypted-tbn0.gstatic.com ./doctruyen14.onl/
-      #     # mv ./i.ytimg.com ./doctruyen14.onl/
-      #     # mv ./down-vn.img.susercontent.com ./doctruyen14.onl/
-      #     # mv ./www.babepedia.com ./doctruyen14.onl/
-      #     # mv ./www.themoviedb.org ./doctruyen14.onl/
-      #     # mv ./nimg.ws.126.net ./doctruyen14.onl/
-      #     # mv ./tinhaycc.com ./doctruyen14.onl/
-      #     # mv ./images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com ./doctruyen14.onl/
-      #     # mv ./iv1.lisimg.com ./doctruyen14.onl/
-      #     # mv ./eroticmv.com ./doctruyen14.onl/
-      #     # mv ./i.pinimg.com ./doctruyen14.onl/
-      #     # mv ./static-cache.k2s.cc ./doctruyen14.onl/
-      #     # mv ./tn.vjav.com ./doctruyen14.onl/
-      #     # mv ./*.bp.blogspot.com ./doctruyen14.onl/
-      #     # mv ./shopchich.vn ./doctruyen14.onl/
-      #     # mv ./cdn.jsdelivr.net ./doctruyen14.onl/
-      #     # mv ./vn-test-11.slatic.net ./doctruyen14.onl/
-      #     # mv ./sun9-61.userapi.com ./doctruyen14.onl/
-      #     # mv ./cf.shopee.vn ./doctruyen14.onl/
-      #     # mv ./cdn.24h.com.vn ./doctruyen14.onl/
-      #     # mv ./ae01.alicdn.com ./doctruyen14.onl/
-      #     mv *.(net|com|vn|jp|org|cc) ./doctruyen14.onl/
+      #     # mv ./doctruyen14.net ./doctruyen14.biz/
+      #     # mv ./meitu.jrants.com ./doctruyen14.biz/
+      #     # mv ./i.imgur.com ./doctruyen14.biz/
+      #     # mv ./gcs.tripi.vn ./doctruyen14.biz/
+      #     # mv ./watermark.lovepik.com ./doctruyen14.biz/
+      #     # mv ./st.quantrimang.com ./doctruyen14.biz/
+      #     # mv ./64.media.tumblr.com ./doctruyen14.biz/
+      #     # mv ./*.media.tumblr.com ./doctruyen14.biz/
+      #     # mv ./blogger.googleusercontent.com ./doctruyen14.biz/
+      #     # mv ./lh*.googleusercontent.com ./doctruyen14.biz/
+      #     # mv ./i5.walmartimages.com ./doctruyen14.biz/
+      #     # mv ./i*.walmartimages.com ./doctruyen14.biz/
+      #     # mv ./pbs.twimg.com ./doctruyen14.biz/
+      #     # mv ./pics.dmm.co.jp ./doctruyen14.biz/
+      #     # mv ./encrypted-tbn0.gstatic.com ./doctruyen14.biz/
+      #     # mv ./i.ytimg.com ./doctruyen14.biz/
+      #     # mv ./down-vn.img.susercontent.com ./doctruyen14.biz/
+      #     # mv ./www.babepedia.com ./doctruyen14.biz/
+      #     # mv ./www.themoviedb.org ./doctruyen14.biz/
+      #     # mv ./nimg.ws.126.net ./doctruyen14.biz/
+      #     # mv ./tinhaycc.com ./doctruyen14.biz/
+      #     # mv ./images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com ./doctruyen14.biz/
+      #     # mv ./iv1.lisimg.com ./doctruyen14.biz/
+      #     # mv ./eroticmv.com ./doctruyen14.biz/
+      #     # mv ./i.pinimg.com ./doctruyen14.biz/
+      #     # mv ./static-cache.k2s.cc ./doctruyen14.biz/
+      #     # mv ./tn.vjav.com ./doctruyen14.biz/
+      #     # mv ./*.bp.blogspot.com ./doctruyen14.biz/
+      #     # mv ./shopchich.vn ./doctruyen14.biz/
+      #     # mv ./cdn.jsdelivr.net ./doctruyen14.biz/
+      #     # mv ./vn-test-11.slatic.net ./doctruyen14.biz/
+      #     # mv ./sun9-61.userapi.com ./doctruyen14.biz/
+      #     # mv ./cf.shopee.vn ./doctruyen14.biz/
+      #     # mv ./cdn.24h.com.vn ./doctruyen14.biz/
+      #     # mv ./ae01.alicdn.com ./doctruyen14.biz/
+      #     mv *.(net|com|vn|jp|org|cc) ./doctruyen14.biz/
       #     echo "Folders moved"
       - name: Setup Pages
         uses: actions/configure-pages@v5
