@@ -76,7 +76,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload entire repository
-          path: './doctruyen14.onl/'
+          path: './doctruyen14.biz/'
           retention-days: 1
       - name: Deploy to GitHub Pages
         id: deployment
