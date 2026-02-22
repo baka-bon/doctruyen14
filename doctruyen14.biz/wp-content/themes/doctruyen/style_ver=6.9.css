@@ -389,3 +389,15 @@ p {
 		height: 35px;
 	}
 }
+
+/* ===== FIX LIST CHUẨN ===== */
+.entry-content ul,
+.entry-content ol {
+    margin: 10px 0;
+    padding-left: 18px; /* vừa phải thôi */
+}
+
+.entry-content li {
+    margin-bottom: 6px;
+    line-height: 1.6;
+}
