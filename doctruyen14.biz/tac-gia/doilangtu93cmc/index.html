@@ -68,6 +68,80 @@
 	padding:5px 5px 5px 15px;
 	list-style-type:none;
 }
+
+/* ===== SEARCH BOX IMPROVED ===== */
+
+#searchform{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:8px;
+padding:10px;
+background:#e9e9e9;
+border-radius:6px;
+}
+
+/* label */
+
+#searchform label{
+font-weight:bold;
+color:#333;
+white-space:nowrap;
+}
+
+/* input */
+
+#searchform input[type="text"]{
+flex:1;
+max-width:420px;
+height:38px;
+padding:0 12px;
+font-size:16px;
+border:1px solid #ccc;
+border-radius:6px;
+background:#fff;
+}
+
+/* button */
+
+#searchform input[type="submit"]{
+height:38px;
+padding:0 16px;
+background:#c32323;
+color:#fff;
+font-weight:bold;
+border:none;
+border-radius:6px;
+cursor:pointer;
+}
+
+/* hover */
+
+#searchform input[type="submit"]:hover{
+background:#a91d1d;
+}
+
+/* ===== MOBILE ===== */
+
+@media(max-width:600px){
+
+#searchform{
+flex-direction:row;
+}
+
+#searchform label{
+display:none;
+}
+
+#searchform input[type="text"]{
+max-width:100%;
+}
+
+#searchform input[type="submit"]{
+padding:0 14px;
+}
+
+}
 		</style>
 		<body class="archive tax-tac-gia term-doilangtu93cmc term-745 wp-theme-doctruyen">
 <div id="page" class="hfeed site">
@@ -84,8 +158,13 @@
 </ul></div>		<div class="clear"></div>
 	</nav><!-- #site-navigation -->
 </header><!-- #masthead -->
-<div class="widget-area" role="complementary"><aside id="search-2" class="widget widget_search"> <form method="get" id="searchform" action="https://doctruyen14.biz/"> <label for="s" class="assistive-text">TÌM TRUYỆN</label> <input type="text" class="field" name="s" id="s" placeholder="Gõ Tên Truyện Có Dấu" /> </form> </aside></div>
-<div id="main" class="wrapper"><section id="primary" class="site-content"><div id="content" role="main">
+<div class="widget-area" role="complementary"><aside id="search-2" class="widget widget_search">
+<form method="get" id="searchform" action="../../index.html">
+	<label for="s" class="assistive-text">TÌM TRUYỆN</label>
+	<input type="text" class="field" name="s" id="s" placeholder="Gõ Tên Truyện Có Dấu" />
+	<input type="submit" class="submit" id="searchsubmit" value="Tìm" />
+</form>
+</aside></div><div id="main" class="wrapper"><section id="primary" class="site-content"><div id="content" role="main">
 	<h1 class="archive-title">Truyện Của Tác Giả doilangtu93cmc</h1>	
 	<div class="cate clear"><article class="post">
 	<h2><a class="entry-title" href="../../champasak-ruc-ro-mot-thuo-ll-co-trang-xuyen-khong/index.html" title="CHAMPASAK-Rực rỡ một thuở (LL, Cổ trang, xuyên không) &#8211; Update Chap 6" rel="bookmark">CHAMPASAK-Rực rỡ một thuở (LL, Cổ trang, xuyên không) &#8211; Update Chap 6</a></h2>
