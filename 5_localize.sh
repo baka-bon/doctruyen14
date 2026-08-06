@@ -58,7 +58,7 @@ for f in "$tmpdir"/depth_*.list; do
 
   xargs -n 100 \
     perl -0777 -i -pe \
-    "s#href=\"https://doctruyen14\.biz/((?!feed/|comments/|wp-json/|truyen-ma/|truyen-cuoi/|dang-truyen/|nghe-audio-truyen-sex-mp3/|truyen-gay/|truyen-teen/|truyen-tinh-cam/|truyen-tranh/|tag/(?:doc-truyen-cuoi|doc-truyen-tranh|gay-18|gay-dam|gay-du-dit-dam|gay-sex|gaysex|loan-luan-gay|sex-gay|sex-gayy-dam|truyen-gay|truyen-gay-18|truyen-gay-hay-2|truyen-gay-loan-luan|truyen-gay-ngan|truyen-sex-gay-2|truyen-teen-2)/|(?:tag/)?(?:audio-truyen|truyen-audio))[^\"]+/(?<!feed/)|audio-truyen-gay/(?<!feed/))?\"#href=\"${up}\$1index.html\"#mg" \
+    "s#href=\"https://doctruyen14\.biz/((?!feed/|comments/|wp-json/|truyen-ma/|truyen-cuoi/|dang-truyen/|nghe-audio-truyen-sex-mp3/|truyen-gay/|truyen-ngon-tinh/|truyen-teen/|truyen-tinh-cam/|truyen-tranh/|tag/(?:doc-truyen-cuoi|doc-truyen-tranh|gay-18|gay-dam|gay-du-dit-dam|gay-sex|gaysex|loan-luan-gay|sex-gay|sex-gayy-dam|truyen-gay|truyen-gay-18|truyen-gay-hay-2|truyen-gay-loan-luan|truyen-gay-ngan|truyen-sex-gay-2|truyen-teen-2)/|(?:tag/)?(?:audio-truyen|truyen-audio))[^\"]+/(?<!feed/)|audio-truyen-gay/(?<!feed/))?\"#href=\"${up}\$1index.html\"#mg" \
     < "$f"
 done
 
