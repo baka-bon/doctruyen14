@@ -22,6 +22,10 @@ find doctruyen14.biz/thang-hung-du-vo-toi-truyen-ngan-hay -type f -exec git upda
 find doctruyen14.biz/thieu-phu-dam-dang-truyen-ngan-hay -type f -exec git update-index --no-assume-unchanged {} \;
 find doctruyen14.biz/vo-chong-anh-vy -type f -exec git update-index --no-assume-unchanged {} \;
 
+# Deleted stories requested by author
+find doctruyen14.biz/toi-nhat-duoc-be-gai-o-ga-tau-va-bien-em-ay-thanh-mon-do-choi-tinh-duc -type f -exec git update-index --no-assume-unchanged {} \;
+find doctruyen14.biz/lay-chong-lay-ca-ba-chong-ban-viet-lai-2025 -type f -exec git update-index --no-assume-unchanged {} \;
+
 # Wrong paragraph/new-line ending
 find doctruyen14.biz/con-gai-hao-sac -type f -exec git update-index --no-assume-unchanged {} \;
 
