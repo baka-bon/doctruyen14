@@ -4,6 +4,24 @@
 find doctruyen14.biz/huong-sac-sen-hong-truyen-ll-cha-con -type f -exec git update-index --no-assume-unchanged {} \;
 find doctruyen14.biz/truyen-dem-khuya-20-ga-ban-trai-hao-sac -type f -exec git update-index --no-assume-unchanged {} \;
 
+# lac-nhom - audio-truyen-gay
+find doctruyen14.biz/audio-truyen-gay -type f -exec git update-index --no-assume-unchanged {} \;
+find doctruyen14.biz/12001-2 -type f -exec git update-index --no-assume-unchanged {} \;
+find doctruyen14.biz/12113-2 -type f -exec git update-index --no-assume-unchanged {} \;
+find doctruyen14.biz/anh-bac-si-may-man-truyen-ngan-hay -type f -exec git update-index --no-assume-unchanged {} \;
+find doctruyen14.biz/ban-trinh-doi-doi -type f -exec git update-index --no-assume-unchanged {} \;
+find doctruyen14.biz/chuyen-chong-vo -type f -exec git update-index --no-assume-unchanged {} \;
+find doctruyen14.biz/hello-world -type f -exec git update-index --no-assume-unchanged {} \;
+find doctruyen14.biz/mim-cuoi-them-lan-nua -type f -exec git update-index --no-assume-unchanged {} \;
+find doctruyen14.biz/nghin-le-mot-dem-dit-nhau -type f -exec git update-index --no-assume-unchanged {} \;
+find doctruyen14.biz/nguoi-yeu-cu-di-lay-chong -type f -exec git update-index --no-assume-unchanged {} \;
+find doctruyen14.biz/nho-ban-dam-duc-va-thang-bo-hao-sac -type f -exec git update-index --no-assume-unchanged {} \;
+find doctruyen14.biz/tac-gia/blueking -type f -exec git update-index --no-assume-unchanged {} \;
+find doctruyen14.biz/thang-cu-ti-va-chi-dau-hung-tinh -type f -exec git update-index --no-assume-unchanged {} \;
+find doctruyen14.biz/thang-hung-du-vo-toi-truyen-ngan-hay -type f -exec git update-index --no-assume-unchanged {} \;
+find doctruyen14.biz/thieu-phu-dam-dang-truyen-ngan-hay -type f -exec git update-index --no-assume-unchanged {} \;
+find doctruyen14.biz/vo-chong-anh-vy -type f -exec git update-index --no-assume-unchanged {} \;
+
 # Wrong paragraph/new-line ending
 find doctruyen14.biz/con-gai-hao-sac -type f -exec git update-index --no-assume-unchanged {} \;
 
