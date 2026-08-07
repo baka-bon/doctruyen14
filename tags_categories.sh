@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo '<!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -91,14 +93,23 @@ echo '<!DOCTYPE html>
 ' > doctruyen14.biz/tags.html
 
 
-cd doctruyen14.biz && find tag -name "*.html" -mindepth 2 -maxdepth 2 -print0 | sort -z | xargs -r0 grep '<h1 class="archive-title">' | sed -E 's/([^:]+):.*>([^<]+)<\/h1>.*/\t<li><h2><a class="entry-title" href="\1" rel="bookmark">\2<\/a><\/h2><\/li>/' >> tags.html
-# cd doctruyen14.biz && find truyen-sex-nguoi-lon -name "*.html" -mindepth 2 -maxdepth 2 -print0 | sort -z | xargs -r0 grep '<h1 class="archive-title">' | sed -E 's/([^:]+):.*>([^<]+)<\/h1>.*/\t<li><h2><a class="entry-title" href="\1" rel="bookmark">\2<\/a><\/h2><\/li>/' >> categories.html
+cd doctruyen14.biz
+# Find tag pages, extract titles, and remove duplicate lines while preserving order
+find tag -name "index.html" -mindepth 2 -maxdepth 2 -print0 \
+	| sort -z \
+	| xargs -r0 grep -H '<h1 class="archive-title">' \
+	| sed -E 's/([^:]+):.*>([^<]+)<\/h1>.*/\t<li><h2><a class="entry-title" href="\1" rel="bookmark">\2<\/a><\/h2><\/li>/' \
+	| awk '!seenTag[$0]++' >> tags.html
+
+# # Same for the category folder
+# find truyen-sex-nguoi-lon -name "index.html" -mindepth 2 -maxdepth 2 -print0 \
+# 	| sort -z \
+# 	| xargs -r0 grep -H '<h1 class="archive-title">' \
+# 	| sed -E 's/([^:]+):.*>([^<]+)<\/h1>.*/\t<li><h2><a class="entry-title" href="\1" rel="bookmark">\2<\/a><\/h2><\/li>/' \
+# 	| awk '!seenCat[$0]++' >> categories.html
 
 
 echo '</ul></div>
-<footer id="colophon" class="site-footer" role="contentinfo">
-	<h1 class="site-title">Doc Truyen 14</h1><h2 class="site-description">Doc Truyen Sex Online</h2>Trang Web <b>Doc Truyen</b> : DocTruyen14.net Được Sưu Tầm Từ Nhiều Nguồn Trên Internet Với Rất Nhiều Thể Loại Truyện Hay ,<strong><a href="truyen-sex-nguoi-lon/index.html" title="truyen sex">Truyen Sex</a></strong> , <a title="truyện ma" href="https://doctruyen14.biz/truyen-ma/">Truyện Ma</a> , Tiểu Thuyết Tình Cảm ,  <a title="truyện cười" href="https://doctruyen14.biz/truyen-cuoi/">Truyện Cười</a> , <b>Doc Truyen</b> Người Lớn . Đây Là Trang Web <b>Dọc Truyen</b> Miễn Phí Và Phổ Biến Dành Cho Mọi Người . Chúc Mọi Người <b>Doc Truyen</b> Vui Vẻ
-</footer><!-- #colophon -->
 </div>
 </div>
 </body></html>' >> tags.html

@@ -16,7 +16,6 @@ find doctruyen14.biz/mim-cuoi-them-lan-nua -type f -exec git update-index --assu
 find doctruyen14.biz/nghin-le-mot-dem-dit-nhau -type f -exec git update-index --assume-unchanged {} \;
 find doctruyen14.biz/nguoi-yeu-cu-di-lay-chong -type f -exec git update-index --assume-unchanged {} \;
 find doctruyen14.biz/nho-ban-dam-duc-va-thang-bo-hao-sac -type f -exec git update-index --assume-unchanged {} \;
-find doctruyen14.biz/tac-gia/blueking -type f -exec git update-index --assume-unchanged {} \;
 find doctruyen14.biz/thang-cu-ti-va-chi-dau-hung-tinh -type f -exec git update-index --assume-unchanged {} \;
 find doctruyen14.biz/thang-hung-du-vo-toi-truyen-ngan-hay -type f -exec git update-index --assume-unchanged {} \;
 find doctruyen14.biz/thieu-phu-dam-dang-truyen-ngan-hay -type f -exec git update-index --assume-unchanged {} \;
