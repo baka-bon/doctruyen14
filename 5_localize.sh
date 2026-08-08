@@ -37,6 +37,8 @@ trap 'rm -rf "$tmpdir"' EXIT
     }
 '
 
+pattern="s#href=\"https://doctruyen14\.biz/((?!feed/|comments/|wp-json/|truyen-ma/|truyen-cuoi/|dang-truyen/|nghe-audio-truyen-sex-mp3/|truyen-gay/|truyen-ngon-tinh/|truyen-teen/|truyen-tinh-cam/|truyen-tranh/|tac-gia/(?:tele-yeuahko|berandal|chan-ga|chanq_co-gai-me-ngon-tinh|damdang|ke-vo-danh|kiepphongba|natcuc_themchich|qsoi|sr-h)/|tag/(?:doc-truyen-cuoi|doc-truyen-tranh|gay-18|gay-dam|gay-du-dit-dam|gay-sex|gaysex|loan-luan-gay|sex-gay|sex-gayy-dam|truyen-gay|truyen-gay-18|truyen-gay-hay-2|truyen-gay-loan-luan|truyen-gay-ngan|truyen-sex-gay-2|truyen-teen-2|ma|tinh-cam-teen-tinh-yeu|trai-du-trai|tuoi-hoc-tro|truyen-14|truyen-14-online|che-cho|chut-hy-vong|da-chet|giuip-do|hua-hen|khi-yeu|nam-than-dep-trai|giup-do)/|(?:tag/)?(?:audio-truyen|truyen-audio))[^\"]+/(?<!feed/)|audio-truyen-gay/(?<!feed/))?"
+
 # 2️⃣ Batch-process per depth
 for f in "$tmpdir"/depth_*.list; do
   [ -s "$f" ] || continue   # skip if file does not exist or is empty
@@ -58,8 +60,8 @@ for f in "$tmpdir"/depth_*.list; do
 
   xargs -n 100 \
     perl -0777 -i -pe \
-    "s#href=\"https://doctruyen14\.biz/((?!feed/|comments/|wp-json/|truyen-ma/|truyen-cuoi/|dang-truyen/|nghe-audio-truyen-sex-mp3/|truyen-gay/|truyen-ngon-tinh/|truyen-teen/|truyen-tinh-cam/|truyen-tranh/|tac-gia/(?:tele-yeuahko|berandal|chan-ga|chanq_co-gai-me-ngon-tinh|damdang|ke-vo-danh|kiepphongba|natcuc_themchich|qsoi|sr-h)/|tag/(?:doc-truyen-cuoi|doc-truyen-tranh|gay-18|gay-dam|gay-du-dit-dam|gay-sex|gaysex|loan-luan-gay|sex-gay|sex-gayy-dam|truyen-gay|truyen-gay-18|truyen-gay-hay-2|truyen-gay-loan-luan|truyen-gay-ngan|truyen-sex-gay-2|truyen-teen-2|ma|tinh-cam-teen-tinh-yeu|trai-du-trai|tuoi-hoc-tro|truyen-14|truyen-14-online|che-cho|chut-hy-vong|da-chet|giuip-do|hua-hen|khi-yeu|nam-than-dep-trai|giup-do)/|(?:tag/)?(?:audio-truyen|truyen-audio))[^\"]+/(?<!feed/)|audio-truyen-gay/(?<!feed/))?\"#href=\"${up}\$1index.html\"#mg;
-    s#href=\"https://doctruyen14\.biz/((?!feed/|comments/|wp-json/|truyen-ma/|truyen-cuoi/|dang-truyen/|nghe-audio-truyen-sex-mp3/|truyen-gay/|truyen-ngon-tinh/|truyen-teen/|truyen-tinh-cam/|truyen-tranh/|tac-gia/(?:tele-yeuahko|berandal|chan-ga|chanq_co-gai-me-ngon-tinh|damdang|ke-vo-danh|kiepphongba|natcuc_themchich|qsoi|sr-h)/|tag/(?:doc-truyen-cuoi|doc-truyen-tranh|gay-18|gay-dam|gay-du-dit-dam|gay-sex|gaysex|loan-luan-gay|sex-gay|sex-gayy-dam|truyen-gay|truyen-gay-18|truyen-gay-hay-2|truyen-gay-loan-luan|truyen-gay-ngan|truyen-sex-gay-2|truyen-teen-2|ma|tinh-cam-teen-tinh-yeu|trai-du-trai|tuoi-hoc-tro|truyen-14|truyen-14-online|che-cho|chut-hy-vong|da-chet|giuip-do|hua-hen|khi-yeu|nam-than-dep-trai|giup-do)/|(?:tag/)?(?:audio-truyen|truyen-audio))[^\"]+/(?<!feed/)|audio-truyen-gay/(?<!feed/))?\?(sort=\w+)\"#href=\"${up}\$1index_\$2.html\"#mg" \
+    "$pattern\"#href=\"${up}\$1index.html\"#mg;
+    $pattern\?(sort=\w+)\"#href=\"${up}\$1index_\$2.html\"#mg" \
     < "$f"
 done
 
@@ -67,4 +69,4 @@ done
 
 #find . -type f -name "*.html" -exec perl -0777 -i -pe 's/mage" content="(?:\.\.\/)*((?!http)[^"]+)"/mage" content="https:\/\/baka-bon.github.io\/doctruyen14\/href"/mg' {} \;
 
-git add -u doctruyen14.biz
+#git add -u doctruyen14.biz
