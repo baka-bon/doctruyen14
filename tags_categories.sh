@@ -113,3 +113,5 @@ echo '</ul></div>
 </div>
 </div>
 </body></html>' >> tags.html
+
+git add -u .

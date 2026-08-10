@@ -69,4 +69,4 @@ done
 
 #find . -type f -name "*.html" -exec perl -0777 -i -pe 's/mage" content="(?:\.\.\/)*((?!http)[^"]+)"/mage" content="https:\/\/baka-bon.github.io\/doctruyen14\/href"/mg' {} \;
 
-#git add -u doctruyen14.biz
+git add -u doctruyen14.biz
