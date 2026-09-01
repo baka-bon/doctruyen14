@@ -1,0 +1,91 @@
+.dt-view-top {
+  margin: 16px 0;
+}
+
+.dt-view-top__title {
+  margin: 0 0 10px;
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+.dt-view-top__tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 0 0 10px;
+}
+
+.dt-view-top__tab {
+  appearance: none;
+  border: 1px solid #d7d7d7;
+  background: #fff;
+  color: #222;
+  cursor: pointer;
+  font: inherit;
+  line-height: 1.2;
+  padding: 7px 10px;
+}
+
+.dt-view-top__tab.is-active {
+  border-color: #222;
+  background: #222;
+  color: #fff;
+}
+
+.dt-view-top__panel[hidden] {
+  display: none;
+}
+
+.dt-view-top__list {
+  counter-reset: dt-view-top;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dt-view-top__item {
+  align-items: flex-start;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  counter-increment: dt-view-top;
+  display: grid;
+  gap: 4px 10px;
+  grid-template-columns: 28px minmax(0, 1fr);
+  padding: 9px 0;
+}
+
+.dt-view-top__item::before {
+  content: counter(dt-view-top);
+  background: #f0f0f0;
+  color: #333;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 700;
+  height: 24px;
+  min-width: 24px;
+}
+
+.dt-view-top__link {
+  color: inherit;
+  font-weight: 600;
+  line-height: 1.35;
+  text-decoration: none;
+}
+
+.dt-view-top__link:hover {
+  text-decoration: underline;
+}
+
+.dt-view-top__views {
+  color: #777;
+  display: block;
+  font-size: 13px;
+  grid-column: 2;
+  line-height: 1.25;
+}
+
+.dt-view-top__empty {
+  color: #777;
+  margin: 0;
+}
