@@ -1,12 +1,12 @@
 #!/bin/bash
 #
-# Daily crawl + localize + publish pipeline for doctruyen14.
-# Invoked by launchd (com.doctruyen14.dailyupdate) every day at 16:00.
+# Weekly crawl + localize + publish pipeline for doctruyen14.
+# Invoked by launchd (com.doctruyen14.weeklyupdate) every Sunday at 16:00.
 
 set -uo pipefail
 
 PROJECT_DIR="/Users/cuongtm/Downloads/us.sitesucker.mac.sitesucker-pro/doctruyen14"
-LOG_FILE="$PROJECT_DIR/daily_update.log"
+LOG_FILE="$PROJECT_DIR/weekly_update.log"
 
 cd "$PROJECT_DIR" || exit 1
 
@@ -21,10 +21,10 @@ if [ $status -ne 0 ]; then
     exit 1
 fi
 
-osascript doctruyen14_daily.scpt
+osascript doctruyen14_weekly.scpt
 status=$?
 if [ $status -ne 0 ]; then
-    echo "ERROR: osascript doctruyen14_daily.scpt failed with status $status"
+    echo "ERROR: osascript doctruyen14_weekly.scpt failed with status $status"
     exit 1
 fi
 
