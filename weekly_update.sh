@@ -35,6 +35,13 @@ if [ $status -ne 0 ]; then
     exit 1
 fi
 
+./tags_categories.sh
+status=$?
+if [ $status -ne 0 ]; then
+    echo "ERROR: tags_categories.sh failed with status $status"
+    exit 1
+fi
+
 git add -A
 
 if git diff --cached --quiet; then
