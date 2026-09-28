@@ -14,6 +14,11 @@ exec >> "$LOG_FILE" 2>&1
 
 echo "===== Run started at $(date "+%Y-%m-%d %H:%M:%S") ====="
 
+# Keep the Mac awake until this script exits. The 15:59 scheduled wake only
+# lasts ~1 minute before idle sleep kicks in, which stalls SiteSucker mid-crawl
+# and makes osascript fail with "AppleEvent timed out (-1712)".
+caffeinate -ims -w $$ &
+
 git pull
 status=$?
 if [ $status -ne 0 ]; then
