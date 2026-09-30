@@ -26,10 +26,21 @@ if [ $status -ne 0 ]; then
     exit 1
 fi
 
+# A SiteSucker instance left over from a failed run may be stuck behind a modal
+# panel and would swallow our Apple Events, so always start from a fresh launch.
+# (The launch-time Open panel itself is disabled via:
+#  defaults write us.sitesucker.mac.sitesucker-pro NSShowAppCentricOpenPanelInsteadOfUntitledFile -bool false)
+if pgrep -x "SiteSucker Pro" > /dev/null; then
+    echo "Found a running SiteSucker Pro instance, quitting it first."
+    pkill -x "SiteSucker Pro"
+    sleep 5
+fi
+
 osascript doctruyen14_daily.scpt
 status=$?
 if [ $status -ne 0 ]; then
     echo "ERROR: osascript doctruyen14_daily.scpt failed with status $status"
+    pkill -x "SiteSucker Pro"
     exit 1
 fi
 
