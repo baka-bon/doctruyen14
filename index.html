@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<title>Redirecting…</title>
+<script>
+  // Old site: https://baka-bon.github.io/doctruyen14/<path>  ->  new site: <TARGET>/<path>
+  (function () {
+    var TARGET = "https://doctruyen14.doctruyen14-worker.workers.dev";
+    var BASE = "/doctruyen14";
+    var path = location.pathname;
+    if (path.indexOf(BASE) === 0) path = path.slice(BASE.length);
+    if (path === "") path = "/";
+    location.replace(TARGET + path + location.search + location.hash);
+  })();
+</script>
+<!-- Without JavaScript, fall back to the new site's home page. -->
+<meta http-equiv="refresh" content="3; url=https://doctruyen14.doctruyen14-worker.workers.dev/">
+</head>
+<body>
+<p>This site has moved to <a href="https://doctruyen14.doctruyen14-worker.workers.dev/">doctruyen14.doctruyen14-worker.workers.dev</a>.</p>
+</body>
+</html>
